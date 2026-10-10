@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: '22'
       - name: Instalar dependencias
-        run: npm install
+        run: npm ci --ignore-scripts
       - name: Ejecutar pruebas y cobertura
         run: npm run test:ci
       - name: Guardar reporte de cobertura
