@@ -1,0 +1,27 @@
+{
+  "name": "integrationsolutions-control-calidad",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Proyecto demostrativo de pruebas unitarias y seguridad para AUY1102",
+  "scripts": {
+    "test": "jest --runInBand",
+    "test:coverage": "jest --coverage --runInBand",
+    "test:ci": "jest --ci --coverage --runInBand",
+    "security:audit": "npm audit"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ]
+  }
+}

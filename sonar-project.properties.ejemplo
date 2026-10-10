@@ -1,0 +1,9 @@
+# Renombra a sonar-project.properties SOLO después de importar el proyecto en SonarQube Cloud.
+# Copia las claves exactas desde la interfaz; no inventarlas.
+sonar.organization=REEMPLAZAR_ORGANIZACION
+sonar.projectKey=REEMPLAZAR_PROYECTO
+sonar.sources=src
+sonar.tests=tests
+sonar.test.inclusions=tests/**/*.test.js
+sonar.javascript.lcov.reportPaths=coverage/lcov.info
+sonar.exclusions=node_modules/**,coverage/**
