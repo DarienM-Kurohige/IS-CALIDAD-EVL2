@@ -32,7 +32,7 @@ jobs:
 
       - name: Analizar código con SonarQube
         if: github.event_name == 'push'
-        uses: SonarSource/sonarqube-scan-action@v8.3.0
+        uses: SonarSource/sonarqube-scan-action@v8.4.0
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
